@@ -1,0 +1,77 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+body {
+  direction: rtl;
+  color: 222831;
+  background-color: #222831;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+button {
+  color: #00adb5;
+  margin: 10px;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #393e46;
+}
+
+.cards {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.card {
+  border-radius: 20px;
+  -webkit-user-select: none; /* Chrome all / Safari all */
+  -moz-user-select: none; /* Firefox all */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none; /* Likely future */
+  transition: all 0.3s;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  height: 120px;
+  width: 160px;
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  transform: scale(1.1);
+  justify-content: center;
+}
+
+.card--question {
+  font-size: 20px;
+}
+
+.invisible {
+  animation: invisible 0.4s;
+  visibility: hidden;
+}
+
+@keyframes invisible {
+  0% {
+  }
+  50% {
+    background-color: yellow;
+  }
+  100% {
+    background-color: yellow;
+    opacity: 0;
+  }
+}
+
+.closed {
+  transform: scale(1);
+  background-color: #00adb5;
+}
